@@ -1,0 +1,72 @@
+
+ 2. import random
+ 3.
+ 4. guessesTaken = 0
+ 5.
+ 6. print('Hello! What is your name?')
+ 7. myName = input()
+ 8.
+ 9. number = random.randint(1, 20)
+10. print('Well, ' + myName + ', I am thinking of a number between 1 and 20.')
+11.
+12. while guessesTaken < 6:
+13. 	print('Take a guess.') 15. 	guess = int(guess)
+16.
+17. 	guessesTaken = guessesTaken + 1
+18.
+19. 	if guess < number:
+20.     	print('Your guess is too low.') 22. 	if guess > number:
+23.     	print('Your guess is too high.')
+24.
+25. 	if guess == number:
+26.     	break
+27.
+28. if guess == number:
+29. 	guessesTaken = str(guessesTaken)
+30. 	print('Good job, ' + myName + '! You guessed my number in ' + guessesTaken + ' guesses!')
+31.
+32. if guess != number:
+33. 	number = str(number)
+34. 	print('Nope. The number I was thinking of was ' + number)
+
+
+Or
+
+
+import random
+number = random.randint(1, 10)
+player_name = input("Hello, What's your name?")
+print('okay! '+ player_name+ ' I am Guessing a number between 1 and 10:')
+while number_of_guesses < 5:
+    guess = int(input())
+    number_of_guesses += 1
+    if guess < number:
+        print('Your guess is too low')
+    if guess > number:
+        print('Your guess is too high')
+    if guess == number:
+        Break
+if guess == number:
+    print('You guessed the number in ' + str(number_of_guesses) + ' tries!')
+else:
+    print('You did not guess the number, The number was ' + str(number))
+import random
+number = random.randint(1, 10)
+
+player_name = input("Hello, What's your name?")
+number_of_guesses = 0
+print('okay! '+ player_name+ ' I am Guessing a number between 1 and 10:')
+
+while number_of_guesses < 5:
+    guess = int(input())
+    number_of_guesses += 1
+    if guess < number:
+        print('Your guess is too low')
+    if guess > number:
+        print('Your guess is too high')
+    if guess == number:
+        break
+if guess == number:
+    print('You guessed the number in ' + str(number_of_guesses) + ' tries!')
+else:
+    print('You did not guess the number, The number was ' + str(number))
